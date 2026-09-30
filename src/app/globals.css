@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --color-arena-50: #fbf8f3;
+  --color-arena-100: #f5efe4;
+  --color-arena-200: #e9dfcd;
+  --color-tinta: #1f1b16;
+  --color-tinta-suave: #5b5348;
+  --color-mar-50: #ecfdf8;
+  --color-mar-100: #d0f5ea;
+  --color-mar-500: #14907c;
+  --color-mar-600: #0f766e;
+  --color-mar-700: #0d5f59;
+  --color-mar-900: #0b3b38;
+  --color-ocaso-400: #fb923c;
+  --color-ocaso-500: #f26b1d;
+  --color-ocaso-600: #d9540d;
+
+  --shadow-tarjeta: 0 1px 2px rgb(31 27 22 / 0.06), 0 8px 24px -12px rgb(31 27 22 / 0.18);
+  --shadow-tarjeta-hover: 0 2px 4px rgb(31 27 22 / 0.08), 0 18px 40px -16px rgb(31 27 22 / 0.3);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-arena-50);
+  color: var(--color-tinta);
+}
+
+::selection {
+  background: var(--color-mar-100);
+  color: var(--color-mar-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-mar-600);
+  outline-offset: 2px;
+}
+
+@utility contenedor {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility boton {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition
+    disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+@utility boton-primario {
+  @apply boton bg-mar-600 text-white hover:bg-mar-700 active:bg-mar-900;
+}
+
+@utility boton-acento {
+  @apply boton bg-ocaso-500 text-white hover:bg-ocaso-600;
+}
+
+@utility boton-secundario {
+  @apply boton border border-arena-200 bg-white text-tinta hover:border-mar-500 hover:text-mar-700;
+}
+
+@utility campo {
+  @apply w-full rounded-xl border border-arena-200 bg-white px-4 py-2.5 text-sm text-tinta shadow-sm transition
+    placeholder:text-tinta-suave/60 focus:border-mar-500 focus:ring-2 focus:ring-mar-100 focus:outline-none;
+}
+
+@utility etiqueta {
+  @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium;
+}
+
+@utility titulo-seccion {
+  @apply font-display text-3xl font-semibold tracking-tight text-tinta sm:text-4xl;
+}
+
+@utility esqueleto {
+  @apply animate-pulse rounded-xl bg-arena-200/70;
+}
