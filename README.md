@@ -3,7 +3,7 @@
 Guía turística de El Salvador construida con **Next.js 16 (App Router)** y **Supabase**. Reúne playas, volcanes, lagos, pueblos, sitios arqueológicos y áreas naturales del país, con fichas de cada destino, búsqueda con filtros y reseñas de viajeros que se pueden crear, editar y eliminar.
 
 - **Sitio en producción:** _(agregar URL de Vercel)_
-- **Repositorio:** _(agregar URL de GitHub)_
+- **Repositorio:** https://github.com/joscal06/next.js-serverless
 
 ## Funcionalidades
 
@@ -86,8 +86,8 @@ Requisitos: Node.js 20.9 o superior y una cuenta gratuita de [Supabase](https://
 1. **Clonar e instalar dependencias**
 
    ```bash
-   git clone <url-del-repositorio>
-   cd destinos-sv
+   git clone https://github.com/joscal06/next.js-serverless.git
+   cd next.js-serverless
    npm install
    ```
 
