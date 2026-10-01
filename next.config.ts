@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Raíz explícita: evita que Turbopack tome un package-lock.json de una carpeta superior.
+  turbopack: { root: __dirname },
 };
 
 export default nextConfig;

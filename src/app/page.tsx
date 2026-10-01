@@ -62,7 +62,7 @@ export default async function Inicio() {
 
         <div className="contenedor flex min-h-[calc(88vh-4rem)] flex-col justify-center py-20 text-white">
           <p className="etiqueta w-fit bg-white/15 text-white ring-1 ring-white/30 backdrop-blur">
-            🇸🇻 Guía de viaje · El Salvador
+            Guía de viaje · El Salvador
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
             Volcanes, olas y pueblos que <span className="text-ocaso-400 italic">enamoran</span>

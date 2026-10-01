@@ -41,11 +41,13 @@ export default function Encabezado() {
     >
       <nav className="contenedor flex h-16 items-center justify-between" aria-label="Principal">
         <Link href="/" className="flex items-center gap-2 font-display text-xl font-semibold text-tinta">
-          <span
-            aria-hidden
-            className="grid size-9 place-items-center rounded-full bg-mar-600 text-lg text-white shadow-sm"
-          >
-            🌋
+          <span aria-hidden className="grid size-9 place-items-center rounded-full bg-mar-600 text-white shadow-sm">
+            {/* Volcán con sol: logotipo */}
+            <svg viewBox="0 0 24 24" className="size-5" fill="none">
+              <circle cx="17" cy="7" r="2.5" fill="#fb923c" />
+              <path d="M2 20l6.5-10h3L14 13.5 16 11l6 9H2z" fill="currentColor" />
+              <path d="M8.5 10l1.5 2.2L11.5 10" stroke="#0f766e" strokeWidth="1.2" strokeLinejoin="round" />
+            </svg>
           </span>
           Destinos <span className="text-ocaso-500">SV</span>
         </Link>
