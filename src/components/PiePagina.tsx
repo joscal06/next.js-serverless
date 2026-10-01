@@ -35,10 +35,23 @@ export default function PiePagina() {
       </div>
 
       <div className="border-t border-white/10">
-        <p className="contenedor py-5 text-xs text-mar-100/60">
-          © {new Date().getFullYear()} Destinos SV · Fotografías de Wikimedia Commons bajo sus respectivas
-          licencias (créditos en cada destino). Precios de entrada referenciales.
-        </p>
+        <div className="contenedor flex flex-col gap-2 py-5 text-xs text-mar-100/60 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} Destinos SV · Fotografías de Wikimedia Commons bajo sus respectivas
+            licencias (créditos en cada destino). Precios de entrada referenciales.
+          </p>
+          <p className="shrink-0 text-mar-100/80">
+            Desarrollado por{" "}
+            <a
+              href="https://github.com/joscal06"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:text-ocaso-400"
+            >
+              José Manuel Calderón González
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

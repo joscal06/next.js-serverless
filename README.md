@@ -2,7 +2,7 @@
 
 Guía turística de El Salvador construida con **Next.js 16 (App Router)** y **Supabase**. Reúne playas, volcanes, lagos, pueblos, sitios arqueológicos y áreas naturales del país, con fichas de cada destino, búsqueda con filtros y reseñas de viajeros que se pueden crear, editar y eliminar.
 
-- **Sitio en producción:** _(agregar URL de Vercel)_
+- **Sitio en producción:** https://next-js-serverless-beta.vercel.app
 - **Repositorio:** https://github.com/joscal06/next.js-serverless
 
 ## Funcionalidades
@@ -115,15 +115,19 @@ Requisitos: Node.js 20.9 o superior y una cuenta gratuita de [Supabase](https://
 | --- | --- | --- |
 | `SUPABASE_URL` | Sí | URL del proyecto de Supabase (`https://xxxx.supabase.co`) |
 | `SUPABASE_ANON_KEY` | Sí | Clave pública `anon` / `publishable`. Solo se usa en el servidor |
-| `NEXT_PUBLIC_SITE_URL` | No | URL pública del sitio, para las etiquetas Open Graph |
+| `NEXT_PUBLIC_SITE_URL` | No | URL pública del sitio para las etiquetas Open Graph. En Vercel no hace falta: se usa `VERCEL_PROJECT_PRODUCTION_URL` |
 
 El archivo `.env.local` está excluido del repositorio. No subas credenciales reales.
 
 ## Despliegue en Vercel
 
 1. Importa el repositorio en [vercel.com/new](https://vercel.com/new).
-2. En **Environment Variables** agrega `SUPABASE_URL`, `SUPABASE_ANON_KEY` y `NEXT_PUBLIC_SITE_URL`.
+2. En **Environment Variables** agrega `SUPABASE_URL` y `SUPABASE_ANON_KEY`.
 3. Haz clic en **Deploy**. Las variables deben existir antes del build, porque `generateStaticParams` consulta Supabase durante la compilación.
+
+## Autor
+
+José Manuel Calderón González · [github.com/joscal06](https://github.com/joscal06)
 
 ## Créditos
 
