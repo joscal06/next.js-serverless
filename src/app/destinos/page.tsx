@@ -92,7 +92,7 @@ export default async function PaginaDestinos({ searchParams }: PageProps<"/desti
         </button>
       </Form>
 
-      <nav className="-mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-2" aria-label="Filtrar por categoría">
+      <nav className="-mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none]" aria-label="Filtrar por categoría">
         <Link
           href={hrefCategoria()}
           aria-current={!categoria ? "page" : undefined}

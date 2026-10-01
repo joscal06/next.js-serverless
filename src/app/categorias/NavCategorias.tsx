@@ -16,7 +16,7 @@ export default function NavCategorias({ categorias }: Props) {
     }`;
 
   return (
-    <nav className="contenedor flex gap-2 overflow-x-auto py-3" aria-label="Categorías">
+    <nav className="contenedor flex gap-2 overflow-x-auto py-3 [scrollbar-width:none]" aria-label="Categorías">
       <Link href="/categorias" className={clase(activo === null)} aria-current={activo === null ? "page" : undefined}>
         Todas
       </Link>
